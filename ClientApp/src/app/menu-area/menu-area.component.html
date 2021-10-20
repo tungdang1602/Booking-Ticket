@@ -1,0 +1,28 @@
+<!--<div class="topnav">
+    <a href="">PHIM</a>
+    <a href="">RAP</a>
+    <a href="">SUATCHIEU</a>
+  </div>-->
+<section class="menu-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="main-menu">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item"><a>PHIM</a>
+              <ul class="dropdown list-unstyled">
+                <li><a [routerLink]="['/now-showing']">Phim Dang Chieu</a></li>
+                <li><a [routerLink]="['/coming-soon']">Phim Sap Chieu</a></li>
+              </ul>
+            <li class="list-inline-item"><a>RAP</a>
+              <ul class="dropdown list-unstyled">
+                <li *ngFor="let cinema of cinemaComplies"><a routerLink="/cinemacomplex/{{cinema.cinemacomplexid}}/1">{{cinema.name}}</a></li>
+              </ul>
+            <li class="list-inline-item"><a [routerLink]="['/']">SUAT CHIEU</a>
+              
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

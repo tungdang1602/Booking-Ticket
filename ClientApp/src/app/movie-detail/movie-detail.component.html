@@ -1,0 +1,30 @@
+<section class="movie-detail">
+    <div>
+        <iframe class="movie-trailer" src="{{movie.trailer}}" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <div class="movie-detail-title">
+        <h2>MOVIE DETAIL</h2>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <div class="gallery">
+                <a target="_blank" href="https://m.media-amazon.com/images/I/91LPOMer4jL._AC_SL1500_.jpg">
+                    <img src="{{movie.poster}}" alt="Cinque Terre">
+                </a>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="movie-detail-name"> {{movie.name}} </div>
+            <p><strong> Đạo diễn : </strong> {{movie.directors}}</p>
+            <p><strong> Diễn viên : </strong> {{movie.casts}}</p>
+            <p><strong> Thời lượng : </strong> {{movie.movieDuration}} phút</p>
+            <p><strong> Ngày công chiếu : </strong> {{movie.premiereDate}}</p>
+            <p><strong> Nội dung phim : </strong> {{movie.summary}}</p>
+            
+
+        </div>
+    </div>
+</section>

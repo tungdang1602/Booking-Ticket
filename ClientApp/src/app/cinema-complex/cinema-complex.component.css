@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+.cinema-complex{
+    width: 100%;
+    overflow:hidden;
+    padding-bottom: 10px;
+}
+.cinema-complex .image-cinema{
+    height:auto;
+    object-fit: cover;
+}
+
+.cinema-complex .cinema-complex-title {
+    margin : 20px 0;
+    width:100%;
+    height: 60px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid grey;
+}
+.col{
+    margin : 20px 320px;
+}
+.cinema-complex-name {
+    font-size: 40px;
+}
+.icon{
+    padding-right: 20px;
+}
+.cinema-complex-banner{
+    width: 100%;
+    height : auto;
+    padding-top : 10px;
+    object-fit: cover;
+}

@@ -1,0 +1,9 @@
+C:\Users\Admin\source\repos\BookingTicket\DTOs\bin\Debug\netcoreapp3.1\DTOs.deps.json
+C:\Users\Admin\source\repos\BookingTicket\DTOs\bin\Debug\netcoreapp3.1\DTOs.dll
+C:\Users\Admin\source\repos\BookingTicket\DTOs\bin\Debug\netcoreapp3.1\DTOs.pdb
+C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.AssemblyInfo.cs
+C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.dll
+C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.pdb
