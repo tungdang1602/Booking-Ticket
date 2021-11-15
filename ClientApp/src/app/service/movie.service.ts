@@ -29,11 +29,33 @@ export class MovieService {
       headers : new HttpHeaders({"Content-Type": "application/json"}),
     });
   }
-  public getMovieComingSoon(){
+  getMovieComingSoon(){
     return this.http.get<any>(environment.apiUrl + "Movie/movie/comingsoon" , {
       headers : new HttpHeaders({"Content-Type": "application/json"}),
     });
   }
+  getMovieNowShowing(){
+    return this.http.get<any>(environment.apiUrl + "Movie/movie/nowshowing" , {
+      headers : new HttpHeaders({"Content-Type": "application/json"}),
+    });
+  }
+  addNewMovie(movieData : any){
+    return this.http.post(environment.apiUrl + "movie", JSON.stringify(movieData),{
+      headers : new HttpHeaders({"Content-Type": "application/json"}),
+    });
+  }
+  deleteMovie(id : any){
+    return this.http.delete(environment.apiUrl + "movie/"+id ,{
+      headers : new HttpHeaders({"Content-Type": "application/json"}),
+    });
+  }
+  updateMovie(movieData : any){
+    return this.http.put(environment.apiUrl + "movie", JSON.stringify(movieData),{
+      headers : new HttpHeaders({"Content-Type": "application/json"}),
+    });
+  }
+  
+
  
   }
   

@@ -1,0 +1,53 @@
+<section class="manage-movie">
+  <div class="title-manage">
+    <p>QUẢN LÝ PHIM
+    <p>
+  </div>
+  <div class="title">
+    <div class="title-movie">
+      <p>DANH SÁCH PHIM</p>
+      
+    </div>
+    <div class="add-movie">
+      <p><strong>TẠO MỚI </strong> <button type="button" class="btn btn-primary" routerLink="/manager/add-movie"><i
+            class="fa fa-pencil-square-o icon "></i></button> </p>
+    </div>
+
+  </div>
+  <div class="list-movie">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th style="width:300px;">Phim</th>
+          <th>Đạo Diễn</th>
+          <th style="width:150px;">Diễn Viên</th>
+          <th>Ngày Phát Hành</th>
+          <th>Thời Lượng</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let movie of listMovies">
+        <tr>
+          <td>
+            <span class="movie-row">
+              {{movie.name}}
+            </span>
+          </td>
+          <td>{{movie.directors}}</td>
+          <td>
+            <span class="movie-row-content">
+              {{movie.casts}}
+            </span>
+          </td>
+          <td>{{movie.premiereDate | date}}</td>
+          <td>{{movie.movieDuration}} phút </td>
+          <td>
+            <button type="button" class="btn btn-primary" routerLink="/manager/edit-movie/{{movie.movieId}}"><i
+                class="fa fa-pencil-square-o"></i></button> ||
+            <button type="button" class="btn btn-danger" (click)="deleteMovie(movie.movieId)"><i class="fa fa-times"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

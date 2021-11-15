@@ -1,30 +1,89 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.AspNetCore.Cryptography.Internal/5.0.11": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.11"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.AspNetCore.Cryptography.Internal/5.0.11": {
+      "sha512": "nXTx115zxvQtIV75oTXMnpljCHLPKW7sdisf4UIKe3hRpa9U5R53l+BHf9W7pxbbjd76/iYVTjXmS89yN9vF6w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.cryptography.internal/5.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "lib/net461/Microsoft.AspNetCore.Cryptography.Internal.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
+        "microsoft.aspnetcore.cryptography.internal.5.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.internal.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.11": {
+      "sha512": "KRSJKv0xE1yIntsgy7T4M4zmjDEjg/KvdG55/1PBFBxFP3hyg3qtDPJhSw1GRT0Q3svjDYXsqqzvM6e4L8dZlA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+        "lib/net461/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
+        "microsoft.aspnetcore.cryptography.keyderivation.5.0.11.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation >= 5.0.11"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\tungd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\Helper.csproj",
+      "projectUniqueName": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\Helper.csproj",
       "projectName": "Helper",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\Helper.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\obj\\",
+      "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\Helper.csproj",
+      "packagesPath": "C:\\Users\\tungd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tungd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -49,6 +108,12 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+            "target": "Package",
+            "version": "[5.0.11, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -64,7 +129,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

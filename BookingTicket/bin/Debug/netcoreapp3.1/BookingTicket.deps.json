@@ -8,7 +8,14 @@
       "TRACE",
       "DEBUG",
       "NETCOREAPP",
-      "NETCOREAPP3_1"
+      "NETCOREAPP3_1",
+      "NETCOREAPP1_0_OR_GREATER",
+      "NETCOREAPP1_1_OR_GREATER",
+      "NETCOREAPP2_0_OR_GREATER",
+      "NETCOREAPP2_1_OR_GREATER",
+      "NETCOREAPP2_2_OR_GREATER",
+      "NETCOREAPP3_0_OR_GREATER",
+      "NETCOREAPP3_1_OR_GREATER"
     ],
     "languageVersion": "8.0",
     "platform": "",
@@ -27,6 +34,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Data": "1.0.0",
           "Entities": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.10",
           "Microsoft.AspNetCore.SpaServices.Extensions": "3.1.19",
           "Microsoft.EntityFrameworkCore": "5.0.10",
@@ -336,25 +344,39 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Cryptography.Internal/5.0.10": {
+      "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.10": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {
+            "assemblyVersion": "3.1.10.0",
+            "fileVersion": "3.100.1020.52004"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.Internal/5.0.11": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.1021.41022"
+            "fileVersion": "5.0.1121.47605"
           }
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.10": {
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.11": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.10"
+          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.11"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.1021.41022"
+            "fileVersion": "5.0.1121.47605"
           }
         },
         "compile": {
@@ -763,7 +785,7 @@
       },
       "Microsoft.Extensions.Identity.Core/5.0.10": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.10",
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.11",
           "Microsoft.Extensions.Logging": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
@@ -1698,6 +1720,9 @@
         }
       },
       "Helper/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.11"
+        },
         "runtime": {
           "Helper.dll": {}
         },
@@ -3286,19 +3311,26 @@
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Cryptography.Internal/5.0.10": {
+    "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xqdkq+lsWeVBxGq0bwgQeT1inqdFErG/McEBNqFVw0hnNQKxWaGPuBDFc8JBQC82Qn6+V1utI3lWvFmUMGEc8Q==",
-      "path": "microsoft.aspnetcore.cryptography.internal/5.0.10",
-      "hashPath": "microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512"
+      "sha512": "sha512-0FwXX6sTTXBq+ZajtT9VSNNFfmzsFL7Jiy4Qj4qT5qBbUPry26V2rh8QMWn52J2+81q9u7Bm0YKfsClu22VTMA==",
+      "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.10",
+      "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.1.10.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.10": {
+    "Microsoft.AspNetCore.Cryptography.Internal/5.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iXsPFNrM6cVGx/zCkz88nDP/pUKn/ni13B6JQhLwOoqI+tsA1x6fVfPp0MKnQtx5AZngGzuNMx+AYR1ED9ZVeg==",
-      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.10",
-      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.5.0.10.nupkg.sha512"
+      "sha512": "sha512-nXTx115zxvQtIV75oTXMnpljCHLPKW7sdisf4UIKe3hRpa9U5R53l+BHf9W7pxbbjd76/iYVTjXmS89yN9vF6w==",
+      "path": "microsoft.aspnetcore.cryptography.internal/5.0.11",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.5.0.11.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KRSJKv0xE1yIntsgy7T4M4zmjDEjg/KvdG55/1PBFBxFP3hyg3qtDPJhSw1GRT0Q3svjDYXsqqzvM6e4L8dZlA==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.11",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.5.0.11.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.10": {
       "type": "package",

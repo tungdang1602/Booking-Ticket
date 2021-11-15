@@ -1,4 +1,5 @@
 ﻿using DTOs.Input;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Services.Interface;
@@ -18,30 +19,33 @@ namespace BookingTicket.Controllers
         {
             _cinemaService = cinemaService;
         }
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetMovie(int id)
         {
 
             return Ok(await _cinemaService.GetCinema(id));
         }
+        [AllowAnonymous]
         [HttpGet("(CinemaComplex)/{id}")]
         public async Task<IActionResult> GetCinemaInComplex(int id)
         {
 
             return Ok(await _cinemaService.GetCinemaInComplex(id));
         }
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> AddCinema(CinemaForCreate cinemaForCreate)
         {
             return Ok(await _cinemaService.AddCinema(cinemaForCreate));
         }
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCinema(int id, [FromForm] CinemaForUpdate cinema)
+        [AllowAnonymous]
+        [HttpPut]
+        public async Task<IActionResult> UpdateCinema(CinemaForUpdate cinema)
         {
-            if (id != cinema.CinemaId)
-                return BadRequest();
             return Ok(await _cinemaService.UpdateCinema(cinema));
         }
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCinema(int id)
         {

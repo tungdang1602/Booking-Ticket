@@ -10,3 +10,16 @@ C:\Users\Admin\source\repos\BookingTicket\Entities\obj\Debug\netcoreapp3.1\Entit
 C:\Users\Admin\source\repos\BookingTicket\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.json
 C:\Users\Admin\source\repos\BookingTicket\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
 C:\Users\Admin\source\repos\BookingTicket\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\bin\Debug\netcoreapp3.1\Entities.deps.json
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.json
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.CoreCompileInputs.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\obj\Debug\netcoreapp3.1\Entities.dll
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\tungd\Source\Repos\Booking-Ticket\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache

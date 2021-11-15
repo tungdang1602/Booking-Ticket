@@ -48,7 +48,7 @@ namespace Data.Repository
             return await query.OrderBy(x => x.CinemaId).ToListAsync();
         }
 
-        public async Task<int> UpdateMovie(Cinema cinema)
+        public async Task<int> UpdateCinema(Cinema cinema)
         {
             Update(cinema);
             return await SaveChangeAsync();

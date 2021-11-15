@@ -1,0 +1,31 @@
+.manager{
+    overflow:auto;
+}
+.side-bar{
+    width: 25%;
+    
+    float: left;
+}
+
+.content{
+    width: 75%;
+    
+    float:right;
+}
+.html .body{
+    height: 100%;
+}
+
+.content {
+    width: 75%;                                
+    background: #e8e8e8;
+    float: right;
+                  
+}
+.sidebar {
+    width: 25%;
+    height: 100%;
+    
+    float: left;
+    
+}              

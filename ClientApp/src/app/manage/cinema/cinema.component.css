@@ -1,0 +1,80 @@
+.cinema{
+    background-color: rgb(236, 232, 232);
+    height:100%;
+    float: right;
+    width: 80%;
+    position :relative;
+    padding :20px;
+    
+}
+.title-edit-cinema {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+.title{
+    padding: 20px 0;
+}
+.title-edit p{
+    
+    padding : 8px;
+}
+
+.title-edit {
+    font-size: 35px;
+    text-align: center;
+   
+}
+.manage-cinema{
+    background-color: rgb(236, 232, 232);
+    height:100%;
+    float: right;
+    width: 80%;
+    position :relative;
+    padding :20px;
+    
+  }
+  .title-manage {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+  }
+  .title{
+    padding: 20px 0;
+  }
+  .title-cinema p{
+    
+    padding : 8px;
+  }
+  
+  .title-cinema {
+    font-size: 35px;
+    text-align: center;
+   
+  }
+  .cinema-complex{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px solid rgb(161, 161, 161);
+  }
+  .cinema-complex-left{
+    float: left;
+    width: 40%;
+    height: 100%;
+  }
+  .cinema-complex-left p{
+    font-size: 16px;
+    text-align:unset;
+  }
+  .cinema-complex-right{
+    float: right;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .cinema-complex-right img{
+    
+    height: 100%;
+    object-fit: cover;
+    
+  }

@@ -1,0 +1,48 @@
+.manage-edit-movie{
+    background-color: rgb(236, 232, 232);
+    height:100%;
+    float: right;
+    width: 80%;
+    position :relative;
+    padding :20px;
+    
+}
+.title-movie {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+}
+.title-edit{
+    padding: 20px 0;
+}
+.title-movie-edit p{
+    
+    padding : 8px;
+}
+
+.title-movie-edit {
+    font-size: 35px;
+    text-align: center;
+}
+.form-edit{
+    padding: 0 30px;
+}
+.btn-edit{
+    width:250px;
+    float:right;
+    height:45px;
+}
+.edit-left{
+    float:left;
+    width:70%;
+}
+.edit-right{
+    float:right;
+    margin-top: 16px;
+    width:30%;
+    text-align: center;
+}
+.edit-poster{
+    width:87%;
+    
+}

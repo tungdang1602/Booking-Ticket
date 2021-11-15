@@ -3,9 +3,6 @@
   }
 .movie-detail {
     width : 100%;
-
-    overflow: auto;
-
 }
 .movie-detail-title {
     margin : 20px 0;
@@ -21,6 +18,9 @@
 .movie-detail-title h2 {
     height: 60px;
 }
+.row{
+    --bs-gutter-x: -0.5rem;
+}
 .col-3{
     text-align: center;
     padding: 20px;
@@ -29,7 +29,7 @@
 .col-9{
     padding-left: 50px;
     padding-top: 40px;
-
+    --bs-gutter-x: -0.5rem;
 }
 .gallery {
 

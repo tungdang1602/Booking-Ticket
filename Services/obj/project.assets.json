@@ -15,7 +15,7 @@
           "lib/netstandard2.0/AutoMapper.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Cryptography.Internal/5.0.10": {
+      "Microsoft.AspNetCore.Cryptography.Internal/5.0.11": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
@@ -24,10 +24,10 @@
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.10": {
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.10"
+          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.11"
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
@@ -1686,6 +1686,9 @@
       "Helper/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.11"
+        },
         "compile": {
           "bin/placeholder/Helper.dll": {}
         },
@@ -1722,10 +1725,10 @@
         "lib/netstandard2.0/AutoMapper.xml"
       ]
     },
-    "Microsoft.AspNetCore.Cryptography.Internal/5.0.10": {
-      "sha512": "xqdkq+lsWeVBxGq0bwgQeT1inqdFErG/McEBNqFVw0hnNQKxWaGPuBDFc8JBQC82Qn6+V1utI3lWvFmUMGEc8Q==",
+    "Microsoft.AspNetCore.Cryptography.Internal/5.0.11": {
+      "sha512": "nXTx115zxvQtIV75oTXMnpljCHLPKW7sdisf4UIKe3hRpa9U5R53l+BHf9W7pxbbjd76/iYVTjXmS89yN9vF6w==",
       "type": "package",
-      "path": "microsoft.aspnetcore.cryptography.internal/5.0.10",
+      "path": "microsoft.aspnetcore.cryptography.internal/5.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1737,14 +1740,14 @@
         "lib/net5.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
-        "microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.internal.5.0.11.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.internal.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.10": {
-      "sha512": "iXsPFNrM6cVGx/zCkz88nDP/pUKn/ni13B6JQhLwOoqI+tsA1x6fVfPp0MKnQtx5AZngGzuNMx+AYR1ED9ZVeg==",
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.11": {
+      "sha512": "KRSJKv0xE1yIntsgy7T4M4zmjDEjg/KvdG55/1PBFBxFP3hyg3qtDPJhSw1GRT0Q3svjDYXsqqzvM6e4L8dZlA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.10",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1756,7 +1759,7 @@
         "lib/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
-        "microsoft.aspnetcore.cryptography.keyderivation.5.0.10.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.keyderivation.5.0.11.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
       ]
     },
@@ -6174,23 +6177,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\tungd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Services\\obj\\",
+      "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\tungd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Services\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tungd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6204,14 +6203,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Data\\Data.csproj"
+            "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Data\\Data.csproj"
             },
-            "C:\\Users\\Admin\\source\\repos\\BookingTicket\\DTOs\\DTOs.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\DTOs\\DTOs.csproj"
+            "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\DTOs\\DTOs.csproj": {
+              "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\DTOs\\DTOs.csproj"
             },
-            "C:\\Users\\Admin\\source\\repos\\BookingTicket\\ViewModels\\ViewModels.csproj": {
-              "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\ViewModels\\ViewModels.csproj"
+            "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\ViewModels\\ViewModels.csproj": {
+              "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\ViewModels\\ViewModels.csproj"
             }
           }
         }
@@ -6246,7 +6245,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

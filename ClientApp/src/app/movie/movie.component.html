@@ -1,16 +1,16 @@
 <app-movie-banner></app-movie-banner>
 <div class="home-movie">
-    <div class="home-title">
-        <h2>PHIM</h2>
+  <div class="home-title">
+    <h2>PHIM</h2>
+  </div>
+  <div class="row">
+    <div class="movie-list">
+      <div class="gallery" *ngFor="let movie of listMovies ">
+        <a routerLink="/movie-detail/{{movie.movieId}}">
+          <img src="{{movie.poster}}">
+        </a>
+        <div class="desc">{{movie.name}}</div>
+      </div>
     </div>
-    <div class="home-movie-list">
-          
-          
-          <div class="gallery" *ngFor="let movie of listMovies ">
-            <a target="_blank" href="{{movie.poster}}">
-              <img src="https://m.media-amazon.com/images/I/91LPOMer4jL._AC_SL1500_.jpg" alt="Cinque Terre" width="600" height="400">
-            </a>
-            <div class="desc">{{movie.name}}</div>
-          </div>
-    </div>
+  </div>
 </div>

@@ -7,3 +7,13 @@ C:\Users\Admin\source\repos\BookingTicket\Helper\obj\Debug\netcoreapp3.1\Helper.
 C:\Users\Admin\source\repos\BookingTicket\Helper\obj\Debug\netcoreapp3.1\Helper.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\BookingTicket\Helper\obj\Debug\netcoreapp3.1\Helper.dll
 C:\Users\Admin\source\repos\BookingTicket\Helper\obj\Debug\netcoreapp3.1\Helper.pdb
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\bin\Debug\netcoreapp3.1\Helper.deps.json
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\bin\Debug\netcoreapp3.1\Helper.dll
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\bin\Debug\netcoreapp3.1\Helper.pdb
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\obj\Debug\netcoreapp3.1\Helper.csproj.AssemblyReference.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\obj\Debug\netcoreapp3.1\Helper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\obj\Debug\netcoreapp3.1\Helper.AssemblyInfoInputs.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\obj\Debug\netcoreapp3.1\Helper.AssemblyInfo.cs
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\obj\Debug\netcoreapp3.1\Helper.csproj.CoreCompileInputs.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\obj\Debug\netcoreapp3.1\Helper.dll
+C:\Users\tungd\Source\Repos\Booking-Ticket\Helper\obj\Debug\netcoreapp3.1\Helper.pdb

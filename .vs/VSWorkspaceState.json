@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BookingTicket",
+    "\\BookingTicket\\Controllers",
+    "\\Entities",
+    "\\Entities\\Models"
+  ],
+  "SelectedNode": "\\BookingTicket\\Controllers\\AuthController.cs",
+  "PreviewInSolutionExplorer": false
+}

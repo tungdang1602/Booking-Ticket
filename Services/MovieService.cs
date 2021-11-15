@@ -32,7 +32,7 @@ namespace Services
             return await _movieRepository.DeleteMovie(MovieId);
         }
 
-        public async Task<PageResult<Movie>> GetAllMovie(GetMoviePagingRequest request)
+        public async Task<List<Movie>> GetAllMovie(GetMoviePagingRequest request)
         {
             return await _movieRepository.GetAllMovie(request);
         }
@@ -42,14 +42,14 @@ namespace Services
             return await _movieRepository.GetMovie(MovieId);
         }
 
-        public async Task<List<Movie>> GetMovieIsPlaying()
+        public async Task<List<Movie>> GetMovieNowShowing()
         {
-            return await _movieRepository.GetMovieIsPlaying();
+            return await _movieRepository.GetMovieNowShowing();
         }
 
-        public async Task<List<Movie>> GetMovieUpComing()
+        public async Task<List<Movie>> GetMovieComingSoon()
         {
-            return await _movieRepository.GetMovieUpComing();
+            return await _movieRepository.GetMovieComingSoon();
         }
 
         public async Task<int> UpdateMovie(MovieForUpdate movieForUpdate)

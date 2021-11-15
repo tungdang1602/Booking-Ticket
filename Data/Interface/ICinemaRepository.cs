@@ -11,7 +11,7 @@ namespace Data.Repository
         Task<Cinema> GetCinema(int CinemaId);
         Task<int> AddCinema(Cinema cinema);
         Task<int> DeleteCinema(int CinemaId);
-        Task<int> UpdateMovie(Cinema cinema);
+        Task<int> UpdateCinema(Cinema cinema);
         Task<List<Cinema>> GetCinemaInComplex(int cinemacpId);
     }
 }

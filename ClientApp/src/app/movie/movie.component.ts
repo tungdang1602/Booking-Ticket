@@ -14,7 +14,7 @@ export class MovieComponent implements OnInit {
    
   }
   ngOnInit(): void {
-    this.movieService.getMovieComingSoon().subscribe((data)=>{
+    this.movieService.getAllMovies(1,10,"").subscribe((data)=>{
       this.listMovies  = data;
       
       console.log(this.listMovies);

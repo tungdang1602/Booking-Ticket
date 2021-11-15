@@ -19,6 +19,12 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.OpenApi.Models;
 using Data.Repository;
+using Data.Interface;
+using Helper;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 
 namespace BookingTicket
 {
@@ -45,7 +51,39 @@ namespace BookingTicket
             services.AddScoped<ICinemaRepository, CinemaRepository>();
             services.AddScoped<ICinemaComplexService, CinemaComplexService>();
             services.AddScoped<ICinemaComplexRepository, CinemaComplexRepository>();
-            
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<ITokenService, TokenService>();
+
+            //JWT
+            var jwtSection = Configuration.GetSection("JWT");
+            services.Configure<AppSettings>(jwtSection);
+            var appSettings = jwtSection.Get<AppSettings>();
+
+            var key = Encoding.ASCII.GetBytes(appSettings.SecretKey);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Subscriber", policy => policy.RequireClaim(ClaimTypes.Role, "Subscriber"));
+                options.AddPolicy("Admin", policy => policy.RequireClaim(ClaimTypes.Role, "Admin"));
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -95,7 +133,7 @@ namespace BookingTicket
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseAuthentication();
             app.UseHttpsRedirection();
 
             app.UseRouting();

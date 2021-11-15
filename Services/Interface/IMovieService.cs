@@ -11,13 +11,13 @@ namespace Services.Interface
 {
     public interface IMovieService
     {
-        public Task<PageResult<Movie>> GetAllMovie(GetMoviePagingRequest request);
+        public Task<List<Movie>> GetAllMovie(GetMoviePagingRequest request);
         public Task<Movie> GetMovie(int MovieId);
         public Task<int> AddMovie(MovieForCreate movieForCreate);
         public Task<int> DeleteMovie(int MovieId);
         public Task<int> UpdateMovie(MovieForUpdate movieForUpdate);
-        public Task<List<Movie>> GetMovieIsPlaying();
-        public Task<List<Movie>> GetMovieUpComing();
+        public Task<List<Movie>> GetMovieNowShowing();
+        public Task<List<Movie>> GetMovieComingSoon();
 
     }
 }

@@ -16,5 +16,8 @@ export class MenuAreaComponent implements OnInit {
       console.log(this.cinemaComplies);
     });
   }
+  reloadPage(): void {
+    window.location.reload();
+  }
 
 }

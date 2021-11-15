@@ -1,37 +1,27 @@
 <section class="top-bar">
     <div class="row">
         <div class="col-md-7">
-          <div class="bar-left">
-            <ul class="list-inline">
-              <li class="list-inline-item">
-                <a>Giới thiệu</a>
-              </li>
-              <li class="list-inline-item">
-                <a>Liên hệ</a>
-              </li>
-            </ul>
-          </div>
         </div>
         <div class="col-md-5">
           <div class="bar-right">
             <ul class="list-inline">
-              <li class="list-inline-item">
-                <a>
+              <li  class="list-inline-item" *ngIf="!IsAuthentication()">
+                <a [routerLink]="['/login']">
                   Đăng nhập
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a>
+              <li class="list-inline-item" *ngIf="!IsAuthentication()">
+                <a [routerLink]="['/register']">
                   Đăng ký
                 </a>
               </li>
-              <li class="list-inline-item profile-list">
+              <li class="list-inline-item profile-list" *ngIf="IsAuthentication()">
                 <div class="profile">
-                  <a>NAME</a>
+                  <a>{{name}}</a>
                 </div>
                 <ul class="dropdown list-unstyled list-fur">
-                  <li><a>Quản lý</a></li>
-                  <li><a>Đăng xuất</a></li>
+                  <li *ngIf="isAdmin"><a [routerLink]="['/manager']">Quản lý</a></li>
+                  <li><a (click)="LogOut()" [routerLink]="['/']">Đăng xuất</a></li>
                 </ul>
               </li>
             </ul>

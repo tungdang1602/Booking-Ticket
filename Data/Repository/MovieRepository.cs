@@ -34,7 +34,7 @@ namespace Data.Repository
             return await SaveChangeAsync();
         }
 
-        public async Task<PageResult<Movie>> GetAllMovie(GetMoviePagingRequest request)
+        public async Task<List<Movie>> GetAllMovie(GetMoviePagingRequest request)
         {
             var query = _context.Movies.Select(x => x);
             if (!string.IsNullOrEmpty(request.Keyword))
@@ -45,12 +45,8 @@ namespace Data.Repository
                 .Take(request.PageSize)
                 .ToListAsync();
 
-            var resultPage = new PageResult<Movie>()
-            {
-                TotalRecord = totalRow,
-                Items = data,
-            };
-            return resultPage;
+          
+            return data;
 
         }
 
@@ -60,20 +56,20 @@ namespace Data.Repository
             return movie;
         }
 
-        public async Task<List<Movie>> GetMovieIsPlaying()
-        {
-            var date = DateTime.Now;
-            var query = from m in _context.Movies
-                        where date <= m.PremiereDate
-                        select m;
-            return await query.OrderBy(x => x.PremiereDate).ToListAsync();
-        }
-
-        public async Task<List<Movie>> GetMovieUpComing()
+        public async Task<List<Movie>> GetMovieNowShowing()
         {
             var date = DateTime.Now;
             var query = from m in _context.Movies
                         where date >= m.PremiereDate
+                        select m;
+            return await query.OrderBy(x => x.PremiereDate).ToListAsync();
+        }
+
+        public async Task<List<Movie>> GetMovieComingSoon()
+        {
+            var date = DateTime.Now;
+            var query = from m in _context.Movies
+                        where date < m.PremiereDate
                         select m;
             return await query.OrderBy(x => x.PremiereDate).ToListAsync();
         }

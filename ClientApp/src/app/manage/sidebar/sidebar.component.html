@@ -1,0 +1,20 @@
+
+  <div class="sidenav">
+    <div class="title">
+      <a href="#">CINEB</a>
+    </div>>
+    <div class="list-side">
+      <a [routerLink]="['/manager']">PHIM</a>
+      <div class="dropdown">
+        <a class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">RẠP</a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li *ngFor="let cinema of cinemaComplies">
+            <a class="dropdown-item" routerLink="manager/cinema/{{cinema.cinemaComplexId}}">{{cinema.name}}</a></li>
+        </ul>
+      </div>
+      <a href="">SUẤT CHIẾU</a>
+      <a href="">DOANH THU</a>
+      <a [routerLink]="['/manager/user']">THÀNH VIÊN</a>
+  
+    </div>
+  </div>

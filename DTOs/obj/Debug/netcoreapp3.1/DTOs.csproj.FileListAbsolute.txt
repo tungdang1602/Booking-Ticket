@@ -7,3 +7,13 @@ C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.Asse
 C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.csproj.CoreCompileInputs.cache
 C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.dll
 C:\Users\Admin\source\repos\BookingTicket\DTOs\obj\Debug\netcoreapp3.1\DTOs.pdb
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\bin\Debug\netcoreapp3.1\DTOs.deps.json
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\bin\Debug\netcoreapp3.1\DTOs.dll
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\bin\Debug\netcoreapp3.1\DTOs.pdb
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\obj\Debug\netcoreapp3.1\DTOs.csproj.AssemblyReference.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\obj\Debug\netcoreapp3.1\DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\obj\Debug\netcoreapp3.1\DTOs.AssemblyInfoInputs.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\obj\Debug\netcoreapp3.1\DTOs.AssemblyInfo.cs
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\obj\Debug\netcoreapp3.1\DTOs.csproj.CoreCompileInputs.cache
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\obj\Debug\netcoreapp3.1\DTOs.dll
+C:\Users\tungd\Source\Repos\Booking-Ticket\DTOs\obj\Debug\netcoreapp3.1\DTOs.pdb

@@ -1,0 +1,29 @@
+<section class="edit-cinema">
+  <div class="title-edit">
+    <p>QUẢN LÝ RẠP</p>
+  </div>
+  <div class="title">
+    <div class="title-edit-info">
+      <p>CHỈNH SỬA THÔNG TIN</p>
+    </div>
+  </div>
+  <div class="edit-content">
+    <form class="row g-3 form-edit edit-left" [formGroup]="editForm" (ngSubmit)="submitForm(editForm.value)">
+      <div class="col-md-12">
+        <label class="form-label" for="txtName">RẠP</label>
+        <input class="form-control" type="text" formControlName="name">
+      </div>
+      <div class="col-md-12">
+        <label class="form-label" for="txtType" > LOẠI PHÒNG</label>
+        <input class="form-control" type="text" formControlName="type">
+      </div>
+      <div class="col-md-12">
+        <label class="form-label" for="txtTotalSeats">TỔNG SỐ GHẾ</label>
+        <input class="form-control" type="text" formControlName="totalSeats">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary btn-edit">XÁC NHẬN</button>
+      </div>
+    </form>
+  </div>
+</section>

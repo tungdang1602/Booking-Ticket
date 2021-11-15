@@ -1,0 +1,52 @@
+<section class="manage-edit-movie">
+  <div class="title-movie">
+    <p>QUẢN LÝ PHIM</p>
+  </div>
+  <div class="title-edit">
+    <div class="title-movie-edit">
+      <p>CHỈNH SỬA THÔNG TIN PHIM</p>
+    </div>
+  </div>
+  <div>
+    <form class="row g-3 form-edit edit-left" [formGroup]="editForm" (ngSubmit)="submitForm(editForm.value)">
+      <div class="col-md-6">
+        <label class="form-label" for="txtName">Tên Phim</label>
+        <input class="form-control" type="text" formControlName="name">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="txtDirectors">Đạo Diễn</label>
+        <input class="form-control" type="text" formControlName="directors">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label" for="txtPremiereDate">Ngày Công Chiếu</label>
+        <input class="form-control" type="text" formControlName="premiereDate">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label"for="txtMovieDuration">Thời Lượng Phim</label>
+        <input class="form-control" type="number" formControlName="movieDuration">
+      </div>
+      <div class="col-12">
+        <label class="form-label"for="txtCasts">Diễn Viên</label>
+        <input class="form-control" type="text" formControlName="casts">
+      </div>
+      <div class="col-12">
+        <label class="form-label"for="txtSummary">Tóm Tắt</label>
+        <input class="form-control" type="text" formControlName="summary">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label"for="txtTrailer">Trailer</label>
+        <input class="form-control" type="text" formControlName="trailer">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label"for="txtPoster">Poster</label>
+        <input class="form-control" type="text" formControlName="poster">
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary btn-edit">EDIT</button>
+      </div>
+    </form>
+    <div class="edit-right">
+      <img class="edit-poster" src="{{movie.poster}}">
+    </div>
+  </div>
+</section>

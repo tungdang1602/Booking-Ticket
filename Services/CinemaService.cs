@@ -43,7 +43,7 @@ namespace Services
         public async Task<int> UpdateCinema(CinemaForUpdate cinemaForUpdate)
         {
             var cinema = _mapper.Map<Cinema>(cinemaForUpdate);
-            return await _cinemaRepository.AddCinema(cinema);
+            return await _cinemaRepository.UpdateCinema(cinema);
         }
     }
 }

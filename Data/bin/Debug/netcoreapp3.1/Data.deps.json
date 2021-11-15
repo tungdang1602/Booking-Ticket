@@ -16,22 +16,22 @@
           "Data.dll": {}
         }
       },
-      "Microsoft.AspNetCore.Cryptography.Internal/5.0.10": {
+      "Microsoft.AspNetCore.Cryptography.Internal/5.0.11": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.1021.41022"
+            "fileVersion": "5.0.1121.47605"
           }
         }
       },
-      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.10": {
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.11": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.10"
+          "Microsoft.AspNetCore.Cryptography.Internal": "5.0.11"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
             "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.1021.41022"
+            "fileVersion": "5.0.1121.47605"
           }
         }
       },
@@ -309,7 +309,7 @@
       },
       "Microsoft.Extensions.Identity.Core/5.0.10": {
         "dependencies": {
-          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.10",
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.11",
           "Microsoft.Extensions.Logging": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
@@ -1209,6 +1209,9 @@
         }
       },
       "Helper/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "5.0.11"
+        },
         "runtime": {
           "Helper.dll": {}
         }
@@ -1226,19 +1229,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Cryptography.Internal/5.0.10": {
+    "Microsoft.AspNetCore.Cryptography.Internal/5.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-xqdkq+lsWeVBxGq0bwgQeT1inqdFErG/McEBNqFVw0hnNQKxWaGPuBDFc8JBQC82Qn6+V1utI3lWvFmUMGEc8Q==",
-      "path": "microsoft.aspnetcore.cryptography.internal/5.0.10",
-      "hashPath": "microsoft.aspnetcore.cryptography.internal.5.0.10.nupkg.sha512"
+      "sha512": "sha512-nXTx115zxvQtIV75oTXMnpljCHLPKW7sdisf4UIKe3hRpa9U5R53l+BHf9W7pxbbjd76/iYVTjXmS89yN9vF6w==",
+      "path": "microsoft.aspnetcore.cryptography.internal/5.0.11",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.5.0.11.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.10": {
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/5.0.11": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iXsPFNrM6cVGx/zCkz88nDP/pUKn/ni13B6JQhLwOoqI+tsA1x6fVfPp0MKnQtx5AZngGzuNMx+AYR1ED9ZVeg==",
-      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.10",
-      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.5.0.10.nupkg.sha512"
+      "sha512": "sha512-KRSJKv0xE1yIntsgy7T4M4zmjDEjg/KvdG55/1PBFBxFP3hyg3qtDPJhSw1GRT0Q3svjDYXsqqzvM6e4L8dZlA==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/5.0.11",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.5.0.11.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/5.0.10": {
       "type": "package",

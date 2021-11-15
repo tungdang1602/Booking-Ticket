@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Data\\Data.csproj": {}
+    "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Data\\Data.csproj": {
+    "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Data\\obj\\",
+        "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\tungd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tungd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,14 +28,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Entities\\Entities.csproj"
+              "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\Helper.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\Helper.csproj"
+              "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\Helper.csproj": {
+                "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\Helper.csproj"
               },
-              "C:\\Users\\Admin\\source\\repos\\BookingTicket\\ViewModels\\ViewModels.csproj": {
-                "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\ViewModels\\ViewModels.csproj"
+              "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\ViewModels\\ViewModels.csproj": {
+                "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\ViewModels\\ViewModels.csproj"
               }
             }
           }
@@ -67,24 +64,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Entities\\Entities.csproj": {
+    "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\tungd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Entities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tungd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -152,24 +146,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\Helper.csproj": {
+    "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\Helper.csproj",
+        "projectUniqueName": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\Helper.csproj",
         "projectName": "Helper",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\Helper.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\Helper\\obj\\",
+        "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\Helper.csproj",
+        "packagesPath": "C:\\Users\\tungd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\Helper\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tungd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -194,6 +185,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -209,24 +206,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Admin\\source\\repos\\BookingTicket\\ViewModels\\ViewModels.csproj": {
+    "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\ViewModels\\ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\ViewModels\\ViewModels.csproj",
+        "projectUniqueName": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\ViewModels\\ViewModels.csproj",
         "projectName": "ViewModels",
-        "projectPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\ViewModels\\ViewModels.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\ViewModels\\obj\\",
+        "projectPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\ViewModels\\ViewModels.csproj",
+        "packagesPath": "C:\\Users\\tungd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\ViewModels\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tungd\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -266,7 +260,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

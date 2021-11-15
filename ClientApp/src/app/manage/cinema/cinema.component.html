@@ -1,0 +1,49 @@
+<section class="cinema">
+  <div class="title-manage">
+    <p>QUẢN LÝ RẠP</p>
+  </div>
+  <div class="title">
+    <div class="title-cinema">
+      <p>THÔNG TIN CỤM RẠP</p>
+    </div>
+    <div class="cinema-complex">
+      <div class="cinema-complex-left">
+        <p style="font-size:20px;"><strong>{{cinema.name}}</strong>
+        <p>
+        <p>{{cinema.address}}</p>
+      </div>
+      <div class="cinema-complex-right">
+        <img src="{{cinema.image}}">
+      </div>
+    </div>
+  </div>
+  <div class="list-cinema">
+    <p style="font-size: 20px;"><strong> DANH SÁCH RẠP </strong>
+    <p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>RẠP</th>
+          <th>LOẠI</th>
+          <th>TỔNG SỐ GHẾ</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cinema of cinemaInComplex">
+          <td>
+            {{cinema.name}}
+          </td>
+          <td>{{cinema.type}}</td>
+          <td>{{cinema.totalSeats}}</td>
+          <td style="text-align:right">
+            <button type="button" class="btn btn-primary" routerLink="/manager/cinema/edit/{{cinema.cinemaId}}"><i
+              class="fa fa-pencil-square-o"></i></button> ||
+              <button type="button" class="btn btn-danger" (click)="deleteCinema(cinema.cinemaId)"><i class="fa fa-times"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>

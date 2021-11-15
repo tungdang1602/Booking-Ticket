@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VifTh3zYAQPssoC1TEkR2ttOUm7sMi2440L+y96O+4F1EXf5jxxRObPaJ5k39GammFLJlsFO+soMA+V89D2ZHw==",
+  "dgSpecHash": "OFaapBYfop4hY0DLL96P0CPaTaW/6zzV1nT5nssvF0rQanqw2yI2F4YUisi+Oc5+ncmiApWZOaoVhB3tW9kPbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\BookingTicket\\DTOs\\DTOs.csproj",
+  "projectFilePath": "C:\\Users\\tungd\\Source\\Repos\\Booking-Ticket\\DTOs\\DTOs.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

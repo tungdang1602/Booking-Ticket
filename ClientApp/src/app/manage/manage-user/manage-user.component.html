@@ -1,0 +1,44 @@
+<section class="manage-movie">
+  <div class="title-manage">
+    <p>QUẢN LÝ THÀNH VIÊN
+    </p>
+  </div>
+  <div class="title">
+    <div class="title-movie">
+      <p>DANH SÁCH THÀNH VIÊN</p>
+    </div>
+  </div>
+  <div class="list-movie">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Họ Tên</th>
+          <th>Email</th>
+          <th>Ngày Sinh</th>
+          <th>Số Điện Thoại</th>
+          <th>Quyền ( 1 : Admin )</th>
+          
+        </tr>
+      </thead>
+      <tbody *ngFor="let user of listUsers">
+        <tr>
+          <th>{{user.userId}}</th>
+          <td>
+           {{user.name}}
+          </td>
+          <td>{{user.email}}</td>
+          <td>
+            {{user.dob}}
+          </td>
+          <td>
+            {{user.phone}}
+          </td>
+          <td>{{user.roleId}}</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</section>
